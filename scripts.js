@@ -38,7 +38,9 @@ function submitBtn(evt){
         }
         console.log(totalSalary);
     // console.log('the total salary is now', totalSalary);
-
+    
+    // TO DO: work to make this reflect monthly costs
+        // $('div.totalMonthly').replaceWith(`<div>Total Monthly: ${totalSalary}</div>`)
 
     render();
 }
