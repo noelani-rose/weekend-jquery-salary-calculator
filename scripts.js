@@ -16,7 +16,7 @@ function onReady() {
 }
 
 function submitBtn(evt){
-    evt.preventDefault();
+    evt.preventDefault(evt);
     console.log('in submitBtn');
 
     let newInfo = {
@@ -27,11 +27,20 @@ function submitBtn(evt){
         annSal: $('#annualSalary').val()
     };
     console.log('new info is now', newInfo);
-
     employeeInfo.push(newInfo);
-    console.log('employeeInfo is now,', employeeInfo);
+    // console.log(employeeInfo[-1]);
 
-    
+// TO DO: Need to convert annSal into number??
+// loop through and add all annual salaries (annSal)
+    // let totalSalary = 0;
+    // Math.floor(employeeInfo.annSal)
+    //     for (let i = 0; i < employeeInfo.length; i++){
+    //         totalSalary += employeeInfo[i].annSal;
+    //     }
+    // console.log('the total salary is now', totalSalary);
+
+
+    render();
 }
 
 function deleteBtn(){
@@ -40,4 +49,23 @@ function deleteBtn(){
 
 function render(){
     console.log('in render');
+    $('#employeeTable').empty();
+
+    for (let em of employeeInfo){
+        $('#employeeTable').append(`
+        <tr>
+            <td>${em.fName}</td>
+            <td>${em.lName}</td>
+            <td>${em.idNum}</td>
+            <td>${em.jobTitle}</td>
+            <td>${em.annSal}</td>
+        </tr>`)
+    }
+}
+
+function convertObjtoNum(obj){
+    let res = {};
+    for (let num in obj){
+
+    }
 }
