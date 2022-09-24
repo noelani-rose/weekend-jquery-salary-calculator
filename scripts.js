@@ -2,7 +2,7 @@ $(document).ready(onReady);
 
 
 let employeeInfo = [];
-let totalMonthly = 0;
+// let totalMonthly = 0;
 
 function onReady() {
     console.log('in onReady')
@@ -26,21 +26,22 @@ function submitBtn(evt){
         jobTitle: $('#jobTitle').val(),
         annSal: $('#annualSalary').val()
     };
+    newInfo.annSal = Number(newInfo.annSal);
+    console.log(newInfo.annSal);
     console.log('new info is now', newInfo);
     employeeInfo.push(newInfo);
+    console.log(employeeInfo);
 
 
-// TO DO: Need to convert annSal into number?? It's concatenating 
 // loop through and add all annual salaries (annSal)
-let totalSalary = ''
+        let totalSalary = 0;
         for (let i = 0; i < employeeInfo.length; i++){
-            totalSalary = totalSalary + employeeInfo[i].annSal;
-            // TO DO: work to make this reflect monthly costs
-            $('.totalMonthly').text(`Total Monthly: ${totalSalary}`)
-
+            totalSalary = totalSalary += employeeInfo[i].annSal / 12;
+            totalMonthly = Math.floor(totalSalary);
+            $('.totalMonthly').text(`Total Monthly: ${totalMonthly}`)
         }
 
-        console.log(totalSalary);
+        console.log(totalMonthly);
     // console.log('the total salary is now', totalSalary);
     
 
