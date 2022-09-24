@@ -7,6 +7,9 @@ Create an application that records employee salaries and adds salaries up to rep
 
 ## Assignment
 
+- create onReady function which calls []
+    - submit button function []
+    - delete button funciton []
 - create empty array of employeeInfo []
 - create input form that collects []
     - employee first name []
@@ -15,9 +18,6 @@ Create an application that records employee salaries and adds salaries up to rep
     - job title []
     - annual salary []
 - create number variable (0 at first) to equal 'total monthly' []
-- create onReady function which calls []
-    - submit button function []
-    - delete button funciton []
 - create submit button on html []
 - create 'total monthly : ' div on html []
 - create submit-button function that []
