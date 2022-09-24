@@ -28,15 +28,15 @@ function submitBtn(evt){
     };
     console.log('new info is now', newInfo);
     employeeInfo.push(newInfo);
-    // console.log(employeeInfo[-1]);
 
-// TO DO: Need to convert annSal into number??
+
+// TO DO: Need to convert annSal into number?? It's concatenating 
 // loop through and add all annual salaries (annSal)
-    // let totalSalary = 0;
-    // Math.floor(employeeInfo.annSal)
-    //     for (let i = 0; i < employeeInfo.length; i++){
-    //         totalSalary += employeeInfo[i].annSal;
-    //     }
+    let totalSalary = 0;
+        for (let i = 0; i < employeeInfo.length; i++){
+            totalSalary += employeeInfo[i].annSal;
+        }
+        console.log(totalSalary);
     // console.log('the total salary is now', totalSalary);
 
 
