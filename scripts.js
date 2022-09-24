@@ -44,7 +44,7 @@ let totalMonthly = 0;
             totalMonthly = Math.floor(totalMonthly);
         }; 
         $('.totalMonthly').text(`Total Monthly: ${totalMonthly}`);    
-
+        $('#firstName, #lastName, #idNumber, #jobTitle, #annualSalary').val('')
     render();
 }
 

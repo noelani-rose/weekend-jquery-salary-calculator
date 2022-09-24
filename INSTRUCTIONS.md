@@ -27,7 +27,7 @@ Create an application that records employee salaries and adds salaries up to rep
     - pushes form info to empty array (employeeInfo) [✅]
     - takes total employee salaries divided by 12 (monthly costs) [✅]
     - append monthly costs ('total monthly') to DOM [✅]
-    - clear the input fields []
+    - clear the input fields [✅]
         - create if statement that states []
             - if ('total monthly') exceeds $20,000 []
             - then add red background to ('total monthly') div []
@@ -35,10 +35,12 @@ Create an application that records employee salaries and adds salaries up to rep
     - removes employee info when clicked []
     - #stretch: removes that employees salary from ('total monthly')[]
 - create render function that [✅] 
-    - empties the table (instead of in the submit button function??) []
-    - loops through (employee of employeeInfo) then []
-    - appends the table w/ new employee info from input form (instead of in the submit button function??) []
-    - create delete button on html [] 
+    - empties the table [✅]
+    - loops through (employee of employeeInfo) then [✅]
+    - appends the table w/ new employee info from input form [✅]
+    - create delete button on html []
+    - create deleteBtn function that []
+        removes employee from DOM when clicked []
 
     
 
