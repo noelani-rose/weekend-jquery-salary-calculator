@@ -24,7 +24,7 @@ Create an application that records employee salaries and adds salaries up to rep
 - create submit-button function that [✅]
     - collects info from form information [✅]
     - add total employee salaries to variable 'total monthly' []
-    - pushes form info to empty array (employeeInfo) []
+    - pushes form info to empty array (employeeInfo) [✅]
     - takes total employee salaries divided by 12 (monthly costs) []
     - append monthly costs ('total monthly') to DOM []
     - clear the input fields []

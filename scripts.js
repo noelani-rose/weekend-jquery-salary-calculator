@@ -32,15 +32,17 @@ function submitBtn(evt){
 
 // TO DO: Need to convert annSal into number?? It's concatenating 
 // loop through and add all annual salaries (annSal)
-    let totalSalary = ''
+let totalSalary = ''
         for (let i = 0; i < employeeInfo.length; i++){
             totalSalary = totalSalary + employeeInfo[i].annSal;
+            // TO DO: work to make this reflect monthly costs
+            $('.totalMonthly').text(`Total Monthly: ${totalSalary}`)
+
         }
+
         console.log(totalSalary);
     // console.log('the total salary is now', totalSalary);
     
-    // TO DO: work to make this reflect monthly costs
-        // $('div.totalMonthly').replaceWith(`<div>Total Monthly: ${totalSalary}</div>`)
 
     render();
 }
@@ -61,7 +63,8 @@ function render(){
             <td>${em.idNum}</td>
             <td>${em.jobTitle}</td>
             <td>${em.annSal}</td>
-        </tr>`)
+        </tr>`);
+
     }
 }
 
