@@ -19,6 +19,19 @@ function submitBtn(evt){
     evt.preventDefault();
     console.log('in submitBtn');
 
+    let newInfo = {
+        fName: $('#firstName').val(),
+        lName: $('#lastName').val(),
+        idNum: $('#idNumber').val(),
+        jobTitle: $('#jobTitle').val(),
+        annSal: $('#annualSalary').val()
+    };
+    console.log('new info is now', newInfo);
+
+    employeeInfo.push(newInfo);
+    console.log('employeeInfo is now,', employeeInfo);
+
+    
 }
 
 function deleteBtn(){
