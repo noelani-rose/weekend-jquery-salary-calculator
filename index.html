@@ -11,47 +11,41 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>Add Employee</h2>
     <form id="employeeForm">
         <!-- employee first name -->
         <div>
-            <label for="firstname">
-                First Name
-            </label>
-            <input type="text" id="firstName"/>
-        </div>
-        
-        <!-- last name -->
-        <div>
-            <label for="lastname">
-                Last Name
-            </label>
-            <input type="text" id="lastName"/>
-        </div>
+            <!-- <label for="firstname">
+            </label> -->
+            <input type="text" id="firstName"
+            placeholder="First Name"/>
+            <!-- last name  -->
+            <input type="text" id="lastName"
+            placeholder="Last Name"/>
+            <!-- id number  -->
+            <input type="text" id="idNumber"
+            placeholder="ID Number"/>
+            <!-- job title  -->
+            <input type="text" id="jobTitle"
+            placeholder="Job Title"/>
+            <!-- annual salary  -->
+            <input type="text" id="annualSalary"
+            placeholder="Annual Salary"/>
 
-        <!-- id number -->
-        <div>
-            <label for="idnumber">
-                ID Number
-            </label>
-            <input type="text" id="idNumber"/>
         </div>
-
-        <!-- job title -->
-        <div>
-            <label for="jobtitle">
-                Job Title
-            </label>
-            <input type="text" id="jobTitle"/>
-        </div>
-        
-        <!-- annual salary  -->
-        <div>
-            <label for="salary">
-                Annual Salary
-            </label>
-            <input type="text" id="annualSalary"/>
-        </div>
+    <br>
+    <br>    
+    <button type="submit">Submit</button>
     </form>
+
+    <table id = "employeeTable">
+        <br>
+        <tr><td>No Employees Added</td></tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
     
 </body>
 </html>

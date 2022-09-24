@@ -1,7 +1,8 @@
 h1 {
     text-align: center;
+    background-color: gray;
+    margin: auto;
 }
 
-form {
-    text-align: center;
-}
+
+
