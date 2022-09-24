@@ -26,7 +26,7 @@ Create an application that records employee salaries and adds salaries up to rep
     - add total employee salaries to variable 'total monthly' [✅]
     - pushes form info to empty array (employeeInfo) [✅]
     - takes total employee salaries divided by 12 (monthly costs) [✅]
-    - append monthly costs ('total monthly') to DOM []
+    - append monthly costs ('total monthly') to DOM [✅]
     - clear the input fields []
         - create if statement that states []
             - if ('total monthly') exceeds $20,000 []

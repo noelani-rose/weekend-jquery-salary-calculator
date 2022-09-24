@@ -2,7 +2,7 @@ $(document).ready(onReady);
 
 
 let employeeInfo = [];
-// let totalMonthly = 0;
+
 
 function onReady() {
     console.log('in onReady')
@@ -35,18 +35,15 @@ function submitBtn(evt){
 
 // loop through and add all annual salaries (annSal)
 // /12 in the wrong place, not computing right number
-        let totalSalary = 0;
-        // let totalMonthly = 0;
+let totalSalary = 0;
+let totalMonthly = 0;
         for (let i = 0; i < employeeInfo.length; i++){
             totalSalary = totalSalary += employeeInfo[i].annSal;
-            // totalMonthly = totalSalary / 12;
             totalSalary = Math.floor(totalSalary);
-        }
-        // totalMonthly = Math.floor(totalMonthly);
-        $('.totalMonthly').text(`Total Monthly: ${totalSalary}`)
-
-        // console.log(totalMonthly);
-    
+            totalMonthly = totalSalary / 12;
+            totalMonthly = Math.floor(totalMonthly);
+        }; 
+        $('.totalMonthly').text(`Total Monthly: ${totalMonthly}`);    
 
     render();
 }
