@@ -36,7 +36,8 @@ let totalMonthly = 0;
             totalMonthly = totalSalary / 12;
             totalMonthly = Math.floor(totalMonthly);
         }; 
-        $('.totalMonthly').text(`Total Monthly: ${totalMonthly}`);    
+        console.log(totalMonthly)
+        $('.totalMonthly').text(`Total Monthly Costs: $${totalMonthly}`);    
         $('#firstName, #lastName, #idNumber, #jobTitle, #annualSalary').val('')
     render();
 }
@@ -44,15 +45,24 @@ let totalMonthly = 0;
 function deleteBtn(){
     console.log('in deleteBtn');
     $(this).parent().parent().remove();
-    for (let d = 0; d < employeeInfo.length; i++){
-        $(this).
-    }
+    // for (let d = 0; d < employeeInfo.length; i++){
+    //     $(this).
+    // }
 }
 
 function render(){
     console.log('in render');
     $('#employeeTable').empty();
-
+    // $('#noEmployee').empty();
+    $('.employeeHeader').append(`
+    <div> Employees </div>`)
+    $('#employeeTable').append(`<tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>ID Number</th>
+    <th>Job Title</th>
+    <th>Annual Salary</th>
+</tr>`)
     for (let em of employeeInfo){
         $('#employeeTable').append(`
         <tr>
@@ -67,3 +77,5 @@ function render(){
         </tr>`)
     }
 }
+
+
