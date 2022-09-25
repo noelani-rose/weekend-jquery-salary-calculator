@@ -45,9 +45,7 @@ let totalMonthly = 0;
 function deleteBtn(){
     console.log('in deleteBtn');
     $(this).parent().parent().remove();
-    // for (let d = 0; d < employeeInfo.length; i++){
-    //     $(this).
-    // }
+
 }
 
 function render(){

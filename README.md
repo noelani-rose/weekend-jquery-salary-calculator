@@ -1,9 +1,13 @@
 # Weekend jQuery Salary Calculator 
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
-
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Duration: 11 hours 
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+Monthly costs calculator that takes input information for specific employees and adds that information to a table. There is no max number of employees that can be added, and employees can be deleted from that table. Annual salaries from all employees are recorded and the total monthly costs for the company are computed. This is done by going through the entire employee list and adding up their total annual salaries and dividing by 12. Total monthly costs are automatically updated and displayed on DOM when a new employee's annual salary is added. 
+
+## Built With
+- Javascript
+- jQuery
+- CSS
+
