@@ -7,8 +7,6 @@ let employeeInfo = [];
 function onReady() {
     console.log('in onReady')
     $('#employeeForm').on('submit', submitBtn);
-    // // Listen for clicks anywhere on the table
-    // // but only call onDelete if it's a `.deleteBtn` element
     $('#employeeTable').on('click', '.deleteBtn', deleteBtn);
 }
 
@@ -75,7 +73,6 @@ function render(){
             <button class = "deleteBtn">Delete</button>
             </td
         </tr>`)
-    // $('.totalMonthly').css("background-color", "red");
     }
 }
 
