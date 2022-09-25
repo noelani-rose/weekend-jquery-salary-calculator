@@ -39,9 +39,7 @@ Create an application that records employee salaries and adds salaries up to rep
     - loops through (employee of employeeInfo) then [✅]
     - appends the table w/ new employee info from input form [✅]
     - create delete button on html [✅]
-    - create deleteBtn function that []
-        - removes employee from DOM when clicked []
-        - updates total monthly 
+
 
     
 

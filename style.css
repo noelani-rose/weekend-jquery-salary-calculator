@@ -31,22 +31,22 @@ h2 {
     border-collapse: collapse;
   }
 
-
-
-  #employeeTable tr:nth-child(even){background-color: #e9e9e9;}
-  
-  #employeeTable tr:hover {background-color: #ddd;}
-
-  #employeeTable th, td{
-    border: 1px solid; 
-  }
-  
   #employeeTable th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: rgb(187, 183, 183)
   }
+
+  #employeeTable tr:nth-child(even){background-color: #e9e9e9;}
+  
+  #employeeTable tr:hover {background-color: rgb(208, 202, 202);}
+
+  #employeeTable th, td{
+    border: 1px solid; 
+  }
+  
+
 
 
 .totalMonthly {
