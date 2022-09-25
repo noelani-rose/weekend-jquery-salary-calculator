@@ -7,12 +7,9 @@ let employeeInfo = [];
 function onReady() {
     console.log('in onReady')
     $('#employeeForm').on('submit', submitBtn);
-    // // console.log('in onReady', $('.deleteBtn'));
-    // // $('.deleteBtn').on('click', onDelete);
     // // Listen for clicks anywhere on the table
     // // but only call onDelete if it's a `.deleteBtn` element
-    // $('#postsTable').on('click', '.deleteBtn', onDelete);
-    $('#postsTable').on('click', '.deleteBtn', deleteBtn);
+    $('#employeeTable').on('click', '.deleteBtn', deleteBtn);
 }
 
 function submitBtn(evt){
@@ -31,10 +28,6 @@ function submitBtn(evt){
     console.log('new info is now', newInfo);
     employeeInfo.push(newInfo);
     console.log(employeeInfo);
-
-
-// loop through and add all annual salaries (annSal)
-// /12 in the wrong place, not computing right number
 let totalSalary = 0;
 let totalMonthly = 0;
         for (let i = 0; i < employeeInfo.length; i++){
@@ -49,7 +42,11 @@ let totalMonthly = 0;
 }
 
 function deleteBtn(){
-    console.log('in deleteBtn')
+    console.log('in deleteBtn');
+    $(this).parent().parent().remove();
+    for (let d = 0; d < employeeInfo.length; i++){
+        $(this).
+    }
 }
 
 function render(){
@@ -64,14 +61,9 @@ function render(){
             <td>${em.idNum}</td>
             <td>${em.jobTitle}</td>
             <td>${em.annSal}</td>
-        </tr>`);
-
-    }
-}
-
-function convertObjtoNum(obj){
-    let res = {};
-    for (let num in obj){
-
+            <td>
+            <button class = "deleteBtn">Delete</button>
+            </td
+        </tr>`)
     }
 }
