@@ -37,10 +37,21 @@ let totalMonthly = 0;
             totalMonthly = Math.floor(totalMonthly);
         }; 
         console.log(totalMonthly)
-        $('.totalMonthly').text(`Total Monthly Costs: $${totalMonthly}`);    
+        $('.totalMonthly').text(`Total Monthly Costs: $${totalMonthly}`); 
+
+
         $('#firstName, #lastName, #idNumber, #jobTitle, #annualSalary').val('')
     render();
 }
+
+
+
+// If the total monthly cost exceeds $20,000, add 
+// a red background color to the total monthly cost. 
+
+
+
+
 
 function deleteBtn(){
     console.log('in deleteBtn');
@@ -73,6 +84,7 @@ function render(){
             <button class = "deleteBtn">Delete</button>
             </td
         </tr>`)
+    $('.totalMonthly').css("background-color", "red");
     }
 }
 
